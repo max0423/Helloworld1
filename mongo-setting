@@ -1,0 +1,52 @@
+
+ "acknowledged" : true,
+ "insertedId" : ObjectId("5ddb3f09557fb94a7f00985c")
+
+
+
+"acknowledged" : true,
+"insertedId" : ObjectId("5ddb4760557fb94a7f00985f")
+
+
+
+> use blog
+switched to db blog
+> db.users.insertOne({name: "max"})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("5ddb1cbe424ba75c89378268")
+}
+> 
+db.posts.insertMany([{title: "first post", userId: ObjectId("5ddb3f09557fb94a7f00985c")},
+             {title: "second post", userId: ObjectId("5ddb3f09557fb94a7f00985c")}
+])
+
+
+ db.users.insertOne({name: "max"})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("5ddb1cbe424ba75c89378268")
+}
+> 
+
+db.posts.insertMany([{title: "first post", userId: ObjectId("5ddb4760557fb94a7f00985f")},
+             {title: "second post", userId: ObjectId("5ddb4760557fb94a7f00985f")}
+])
+
+
+
+const session8 = db.getMongo().startSession()
+
+const usersC8= session8.getDatabase("blog").users
+
+const postsC8 =  session8.getDatabase("blog").posts
+
+
+session8.startTransaction()
+
+db.users.deleteOne({ "_id": ObjectId("5ddb4760557fb94a7f00985f")})
+
+db.posts.deleteMany({ "userid": ObjectId("5ddb4760557fb94a7f00985f")})
+
+
+session88.commitTransaction()
