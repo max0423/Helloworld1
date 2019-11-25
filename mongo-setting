@@ -1,5 +1,14 @@
 
+
+mongod --dbpath C:\data1\db --port 27001 --logpath C:\data1\log\mongod.log --journal --storageEngine=mmapv1 --replSet myset
+
+rsconf={ _id:"myset", members: [ { _id: 0,host:"Hostname:27000"}]}
+
+rs.initiate(rsconf);
+  
  "acknowledged" : true,
+ 
+ 
  "insertedId" : ObjectId("5ddb3f09557fb94a7f00985c")
 
 
