@@ -54,6 +54,30 @@ complete before merging the next.
 
 
 
+Containers:
+
+Containers are an abstraction at the app layer
+that packages code and dependencies together.
+Multiple containers can run on the same machine
+and share the OS kernel with other containers,
+each running as isolaed processes in user space,
+Containers take up less space then VMS,
+and start almost instantly.
+
+Virtual machines:
+
+Virtual machines are abtraction of physical
+hardware turning one server into many 
+servers. the hypervisor allows multiple vms
+to run on a single machine.
+each VM includes a full copy of an operating
+systemm, one or more apps, necessary binaries 
+and libaries. VM can be slow to boot.
+
+
+
+
+
 
 
 
