@@ -1,0 +1,60 @@
+
+
+what is anonymous functions?
+
+An anonymous function is a function that was declared without any named identifier to refer to it. As such, an anonymous function is 
+
+usually not accessible after its initial creation.
+
+what is arrow function?
+
+An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to 
+
+the this, arguments, super, or new.target keywords. Arrow function expressions cannot be used as constructors.
+
+
+what is typescript? 
+
+TypeScript is an open-source programming language developed and maintained by Microsoft. It is a strict syntactical superset of 
+
+JavaScript, and adds optional static typing to the language. TypeScript is designed for development of large applications and 
+
+transcompiles to JavaScript
+
+what is promise?
+
+A promise is an object that may produce a single value in the feature.
+Promises is return from a function call, and have the reject and resolve function as parameter,
+Which can according certain scenario to resolve or reject a value.
+
+what is obeservable?
+
+
+Observable provide support for passing message between publisher and subscriber in our app.
+The observable is used for asynchrounrous stream data.
+A stream of data possible asynchronous or possible multiple value over time. Whenever the observable emit a new value  and observer will 
+
+execute the code when receive the value.
+
+
+what is swithmap and mergemap and concat map?
+
+swithmap:
+Projects each source value to an Observable which is merged in the output Observable, emitting values only from the most recently 
+
+projected Observable.
+
+Mergemap:
+Projects each source value to an Observable which is merged in the output Observable.
+
+Concat map:
+Projects each source value to an Observable which is merged in the output Observable, in a serialized fashion waiting for each one to 
+
+complete before merging the next.
+
+
+
+
+
+
+
