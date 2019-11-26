@@ -1,0 +1,12 @@
+
+JavaScript Object Literal. 
+
+A JavaScript object literal is a comma-separated list of name-value pairs wrapped in curly braces. Object literals encapsulate data, enclosing it in a tidy package. This minimizes the use of global variables which can cause problems when combining code.
+
+Prototype:
+Objects in JavaScript have an internal property known as prototype. It is simply a reference to another object 
+An object’s prototype attribute specifies the object from which it inherits properties.
+
+
+rest and spread operator
+where rest parameter collects items into an array, the spread operator unpacks the collected elements into single elements.
