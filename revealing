@@ -1,0 +1,22 @@
+
+what is revealing module?
+turn this object literal into a module that only exposes the required method
+
+var musicModule = (function () {
+  // Let's make sure no one can directly access our songList
+  var songList = ['California Girls', 'California Dreaming', 'Hotel California'];  
+
+  // We'll expose all these functions to the user
+  function play () {
+    console.log('Im playing the next song!');
+  }
+
+  function pause () {
+    console.log('Im paused!');
+  }
+ 
+  return {
+    playMusic: play
+ 
+  }
+})(); 
