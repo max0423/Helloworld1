@@ -16,3 +16,6 @@ Observable provide support for passing message between publisher and subscriber 
 The observable is used for asynchrounrous stream data.
 A stream of data possible asynchronous or possible multiple value over time. Whenever observable emits a new value  and observer will execute the code when receive the value.
 
+
+the difference between promise and observable
+the main difference between a promise and an observable is that a promise emits only a single value, whereas an observable emits multiple values
