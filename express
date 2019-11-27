@@ -1,0 +1,8 @@
+
+
+Express.js is a lightweight web application which helps in organizing the web application into MVC architecture on the server side.
+
+It uses middlewares to provide a response to the HTTP or RESTful requests. 
+with the routing table, we can defined for performing various HTTP operations. 
+It is also used for dynamically rendering HTML pages which are based on passing arguments to the templates.
+Everything from routes to rendering view and performing HTTP requests can be managed by Express JS.
