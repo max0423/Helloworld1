@@ -1,0 +1,18 @@
+callback:
+
+a function passed to some other function,
+the callback function will be executed after another function has finished executing.
+
+Promise:
+
+A promise is an object that may produce a single value come time in the feature.
+Promises is return from a function call, and have the reject and resolve function as parameter,
+Which can according certain scenario to resolve or reject a value.
+
+
+Observabel:
+
+Observable provide support for passing message between publisher and subscriber in our app.
+The observable is used for asynchrounrous stream data.
+A stream of data possible asynchronous or possible multiple value over time. Whenever observable emits a new value  and observer will execute the code when receive the value.
+
