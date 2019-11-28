@@ -1,3 +1,26 @@
 React provides hooks, methods that get called automatically at each point in the lifecycle, that give you good control of what happens at the point it is invoked. A good understanding of these hooks will give you the power to effectively control and manipulate what goes on in a component throughout its lifetime.
 
 Our lifecycle is broadly categorized into three parts: Mounting, Updating and Unmounting.
+
+Mounting
+These methods are called in the following order when an instance of a component is being created and inserted into the DOM:
+
+constructor()
+static getDerivedStateFromProps()
+render()
+componentDidMount()
+
+
+Updating
+An update can be caused by changes to props or state. These methods are called in the following order when a component is being re-rendered:
+
+static getDerivedStateFromProps()
+shouldComponentUpdate()
+render()
+getSnapshotBeforeUpdate()
+componentDidUpdate()
+
+Unmounting
+This method is called when a component is being removed from the DOM:
+
+componentWillUnmount()
