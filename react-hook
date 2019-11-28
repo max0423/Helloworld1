@@ -1,0 +1,3 @@
+React provides hooks, methods that get called automatically at each point in the lifecycle, that give you good control of what happens at the point it is invoked. A good understanding of these hooks will give you the power to effectively control and manipulate what goes on in a component throughout its lifetime.
+
+Our lifecycle is broadly categorized into three parts: Mounting, Updating and Unmounting.
