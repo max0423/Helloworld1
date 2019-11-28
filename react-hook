@@ -1,3 +1,10 @@
+
+The different between React Element and react component..
+React Element - It is a simple object that describes a DOM node and its attributes or properties you can say.
+It is an immutable description object and you can not apply any methods on it.
+React Component - It is a function or class that accepts an input and returns a React element.
+
+
 React provides hooks, methods that get called automatically at each point in the lifecycle, that give you good control of
 what happens at the point it is invoked. A good understanding of these hooks will give you the power to effectively 
 control and manipulate what goes on in a component throughout its lifetime.
