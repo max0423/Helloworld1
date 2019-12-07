@@ -1,0 +1,5 @@
+
+
+<input disabled ={this.getDisabled()} type="submit" value="Submit" />
+
+getDisabled = () => { return this.state.id === "" ? true : false }
