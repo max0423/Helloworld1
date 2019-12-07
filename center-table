@@ -1,0 +1,15 @@
+
+
+.container {
+  display: flex  !important;
+  justify-content: space-between;
+}
+
+.container div{
+  padding: 3px;
+}
+
+table {
+  margin-left:auto; 
+  margin-right:auto;
+}
