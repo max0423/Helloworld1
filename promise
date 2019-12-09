@@ -1,0 +1,176 @@
+
+
+
+
+const getUser = () => {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve({ name: 'Max' })
+    }, 2000)
+  })
+}
+
+
+user = await getUser(auth) // <- async operation
+console.log(user.name)
+
+
+
+
+
+
+const getUser = () => {
+  setTimeout(() => {
+    return { name: 'Max' }
+  }, 2000)
+}
+
+const user = getUser() // This doesn't actually fetch the user
+console.log(user.name) // This won't work
+
+
+
+const getUser = cb => {
+  setTimeout(() => {
+    cb({ name: 'Max' })
+  }, 2000)
+}
+
+getUser(user => {
+  console.log(user.name) // Prints 'Max' after 2 seconds
+})
+
+
+
+const getUser = () => {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve({ name: 'Max' })
+    }, 2000)
+  })
+}
+getUser().then(user => {
+  console.log(user.name)
+})
+
+
+user = getUser(auth) // <- async operation
+console.log(user.name)
+
+
+
+var response = await promise1
+
+console.log(response);
+
+promise1.then(function(value) {
+  console.log(value);
+  // expected output: "foo"
+});
+
+console.log(promise1);
+
+
+
+
+
+const getUser = () => {
+	setTimeout(()=>{
+		return {name: 'Max'}
+	}, 2000)
+
+}
+
+
+
+	setTimeout(()=>{
+		console.log( {name: 'Max'})
+	}, 10000)
+
+
+
+
+
+
+
+
+
+
+./mongod --dbpath data --logpath data/log.log --fork --replSet foo
+./mongod --dbpath data --logpath data/log.log --fork --replSet foo
+./mongod --dbpath data --logpath data/log.log --fork --replSet foo
+
+ObjectId("5ddb1cbe424ba75c89378268")
+
+ "errmsg" : "Transaction numbers are only allowed on a replica set member o
+ "code" : 20,
+ "codeName" : "IllegalOperation"
+
+
+
+
+
+
+
+
+
+
+usersC.deleteOne ({ _id: ObjectId("5ddb1cbe424ba75c89378268")})
+
+
+
+
+
+
+
+
+
+
+db.posts.insertMany([
+{title: "first post", userId: ObjectId("5ddb1cbe424ba75c89378268")},
+{title: "second post", userId: ObjectId("5ddb1cbe424ba75c89378268")}
+
+])
+
+
+
+usersC.deleteOne ({ _id: ObjectId("5ddb1cbe424ba75c89378268")})
+
+
+What is the Big Difference Between SAML and OAuth?
+Informally in my own words:
+
+SAML (Security Assertion Markup Language) is an umbrella standard that encompasses profiles, bindings and constructs to achieve Single Sign On (SSO), Federation and Identity Management.
+
+OAuth (Open Authorization) is a standard for authorization of resources. It does not deal with authentication.
+
+For formal definitions,
+
+According to wikipedia page on SAML:
+
+Security Assertion Markup Language is an XML-based open standard data format for exchanging authentication and authorization data between parties, in particular, between an identity provider and a service provider.
+
+according to OAuth.net
+
+An open protocol to allow secure authorization in a simple and standard method from web, mobile and desktop applications.
+What are the Other Differences?
+ 1. Token or Message Format<
+SAML deals with XML as the data construct or token format.
+
+OAuth tokens can be binary, JSON or SAML as explained in OAuth Bearer Tokens.
+
+2. Transport
+SAML has Bindings that use HTTP such as HTTP POST Binding, HTTP REDIRECT Binding etc.
+
+But there is no restriction on the transport format. You can use SOAP or JMS or any transport you want to use to send SAML tokens or messages.
+
+OAuth uses HTTP exclusively.
+
+3. Scope
+Even though SAML was designed to be applicable openly, it is typically used in Enterprise SSO scenarios -
+
+within an enterprise or
+enterprise to partner or
+enterprise to cloud scenarios.
+OAuth has been designed for use with applications on the internet, primarily for delegated authorization of internet resources. OAuth is designed for Internet Scale.
+
