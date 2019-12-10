@@ -1,6 +1,20 @@
 
 
 
+The Object.assign() method is used to copy the values of all enumerable own properties from one 
+or more source objects to a target object. It will return the target object.
+
+
+const target = { a: 1, b: 2 };
+const source = { b: 4, c: 5 };
+
+const returnedTarget = Object.assign(target, source);
+
+
+For deep cloning, we need to use other alternatives because Object.assign() copies property values. If the source value is a reference to an object, it only copies that reference value.
+
+
+
 
 foreach is an method that is available only in Array objects.
 
