@@ -28,16 +28,19 @@ Observabel:
 
 Observable provide support for passing message between publisher and subscriber in our app.
 The observable is used for asynchrounrous stream data.
-A stream of data possible asynchronous or possible multiple value over time. Whenever observable emits a new value  and observer will execute the code when receive the value.
+A stream of data possible asynchronous or possible multiple value over time. Whenever observable emits a new value  
+and observer will execute the code when receive the value.
 
 
 the difference between promise and observable
-the main difference between a promise and an observable is that a promise emits only a single value, whereas an observable emits multiple values
+the main difference between a promise and an observable is that a promise emits only a single value, 
+whereas an observable emits multiple values
 
 
 
 async functions returns a promise.
-async functions use an implicit Promise to return its result. Even if you don’t return a promise explicitly async function makes sure that your code is passed through a promise.
+async functions use an implicit Promise to return its result. Even if you don’t return a promise explicitly 
+async function makes sure that your code is passed through a promise.
 await blocks the code execution within the async function
 
 
