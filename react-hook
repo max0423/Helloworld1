@@ -1,3 +1,10 @@
+what are features of React?
+
+it uses virtual dom instead of the real dom.
+it follows uni-directional data flow.
+it uses client-side and server-side rendering.
+
+
 28. How are forms created in React?
 React forms are similar to HTML forms. But in React, the state is contained in the state property
 of the component and is only updated via setState(). Thus the elements can’t directly
