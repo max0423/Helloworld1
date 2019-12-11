@@ -1,4 +1,16 @@
 
+
+
+Pure Component:
+Just like Pure Functions in JavaScript, a React component is considered a Pure Component if it renders the same output 
+for the same state and props value. React provides the PureComponent base class for these class components. 
+Class components that extend the React.PureComponent class are treated as pure components.
+
+
+using PureComponents(for class components) and React.memo(for functional components).
+PureComponents does a shallow comparison inorder to detect whether the rerender is required or not
+
+
 The different between React Element and react component..
 React Element - It is a simple object that describes a DOM node and its attributes or properties you can say.
 It is an immutable description object and you can not apply any methods on it.
