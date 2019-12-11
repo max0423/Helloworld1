@@ -1,5 +1,7 @@
 
-
+HOC:
+A higher-order component (HOC) is an advanced technique in React for reusing component logic.
+They are a pattern that emerges from React’s compositional nature.
 
 Pure Component:
 Just like Pure Functions in JavaScript, a React component is considered a Pure Component if it renders the same output 
