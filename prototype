@@ -1,4 +1,9 @@
 
+
+Objects in JavaScript have an internal property known as prototype.
+It is simply a reference to another object. An object’s prototype attribute specifies the object from which it inherits properties.
+
+
 classical inheritance
 it creates a copy of the behavior from parent class into the child 
 when we extend the class and after that parent and child class are separate entity.
