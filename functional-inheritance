@@ -1,0 +1,25 @@
+
+
+Functional inheritance
+
+The functional inheritance pattern is well explained in Douglas Crockford’s book: JavaScript, The Good Parts. Basically, an object constructor function creates an empty object and adds it some methods before returning it. Inheritance is achieved in this object constructor function by getting the object through another object constructor function instead of creating an empty one. Example:
+
+
+function base(spec) {
+    var that = {}; // Create an empty object
+    that.name = spec.name; // Add it a "name" property
+    return that; // Return the object
+}
+
+// Construct a child object, inheriting from "base"
+function child(spec) {
+    var that = base(spec); // Create the object through the "base" constructor
+    that.sayHello = function() { // Augment that object
+        return 'Hello, I\'m ' + that.name;
+    };
+    return that; // Return it
+}
+
+// Usage
+var object = child({ name: 'a functional object' });
+result.textContent = object.sayHello();
