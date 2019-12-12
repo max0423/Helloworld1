@@ -1,0 +1,12 @@
+
+
+function(a, b){return a - b}
+
+When the sort() function compares two values, it sends the values to the compare function, 
+and sorts the values according to the returned (negative, zero, positive) value.
+If the result is negative a is sorted before b.
+If the result is positive b is sorted before a.
+
+
+var points = [40, 100];
+points.sort(function(a, b){return a-b});
