@@ -8,3 +8,52 @@ Immutable.JS avoids this by cleverly sharing data structures under the surface,
 minimizing the need to copy data. It also enables complex chains of operations to be carried out 
 without creating unnecessary (and costly) cloned intermediate data that will quickly be thrown away.
 
+
+import { createStore } from "redux";
+import { fromJS } from "immutable";
+
+const initialData = { child: "One" };
+
+const initialState = fromJS({
+  data: { potentially: { deep: initialData } },
+  unrelatedData: { nothing: "yet" }
+});
+
+const CONSTANTS = {
+  setData: "SET_DATA",
+  setUnrelatedData: "SET_UNRELATED_DATA"
+};
+
+const reducer = (state = initialState, action) => {
+  switch (action.type) {
+    case CONSTANTS.setData:
+      return state.setIn(
+        ["data", "potentially", "deep"],
+        fromJS(action.payload.data)
+      );
+    case CONSTANTS.setUnrelatedData:
+      return state.set("unrelatedData", fromJS(action.payload.data));
+    default:
+      return state;
+  }
+};
+
+export const setUnrelatedData = () => ({
+  type: CONSTANTS.setUnrelatedData,
+  payload: { data: { something: "totally unrelated data" } }
+});
+
+export const setData = newData =>
+ ({
+  type: CONSTANTS.setData,
+  payload: { data: newData }
+});
+
+export const getData = state => {
+  console.log("getData called");
+  return state.getIn(["data", "potentially", "deep"]).toJS();
+};
+
+export const store = createStore(reducer);
+
+
