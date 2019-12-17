@@ -1,0 +1,13 @@
+
+
+
+An inline function in render allocates a new function instance each time render is called. 
+Some suggest that this will cause performance issues because the garbage collector will be be invoked more often.
+
+
+PureComponent includes by default a shallow comparison of props and state in shouldComponentUpdate, 
+meaning it won’t re-render with the same props and state.
+
+Memoization is a powerful tool that acts as a cache: it takes a pure function as a parameter and 
+is guaranteed to return the  same result of the last same input. 
+In other words, with the same input it will return the memorized result of the last time you called it.
