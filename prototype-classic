@@ -1,6 +1,8 @@
 The Object.assign() method copies all enumerable own properties 
 from one or more source objects to a target object. It returns the target object.
 
+The Object.create() method creates a new object, using an existing object as the prototype of the newly created object.
+
 classical inheritance
 it creates a copy of the behavior from parent class into the child 
 when we extend the class and after that parent and child class are separate entity.
