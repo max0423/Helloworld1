@@ -1,3 +1,5 @@
+The Object.assign() method copies all enumerable own properties 
+from one or more source objects to a target object. It returns the target object.
 
 classical inheritance
 it creates a copy of the behavior from parent class into the child 
