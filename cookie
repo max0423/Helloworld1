@@ -1,0 +1,7 @@
+
+
+import cookieParser from 'cookie-parser';
+const token = req.cookies.token
+const { user} = jwt.verify(token, secret);
+
+res.cookie('token', token, { maxAge: 60*60*24*7, httpOnly: true })
