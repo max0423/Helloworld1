@@ -1,0 +1,9 @@
+
+
+
+mergemap operator will take an outer observable and then
+merge an inner observable into it.and whenever the inner observable then
+emits a value it will also take the value of the outer observable into account to give us a combined value
+
+
+the combined value the inner observable has to emit a value for the whole observable to update.
