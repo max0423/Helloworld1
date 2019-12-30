@@ -1,0 +1,15 @@
+
+
+The identity provider signs the SAML assertion or response using its own private key.
+
+The service provider verifies the signature using the corresponding public key of the identity provider.
+
+The only other consideration is with SP-initiated SSO the SAML authn request often is signed.
+
+In this case the service provider signs the authn request with its private key and the identity provider verifies the signature using the corresponding public key.
+
+The service provider has the option of using the same or different keys for signature generation and SAML assertion decryption.
+
+One advantage of using the same key for signature generation and decryption is that there's one less certificate to distribute and manage.
+
+The golden rule in all of this is that no party should ever divulge their private key to another party.
