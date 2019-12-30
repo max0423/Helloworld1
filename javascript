@@ -11,7 +11,8 @@ const source = { b: 4, c: 5 };
 const returnedTarget = Object.assign(target, source);
 
 
-For deep cloning, we need to use other alternatives because Object.assign() copies property values. If the source value is a reference to an object, it only copies that reference value.
+For deep cloning, we need to use other alternatives because Object.assign() copies property values. 
+If the source value is a reference to an object, it only copies that reference value.
 
 
 
