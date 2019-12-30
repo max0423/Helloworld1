@@ -1,126 +1,21 @@
 
 
-Viewed 70k times
 
-114
+I assume you already know that MongoDB is a NoSQL database system which stores data in the form of BSON documents.
+Your question, however is about the packages for Node.js.
 
-
-30
-I wanted to use the mongodb database, but I noticed that there are two different databases with either their own website and installation methods: mongodb and mongoose. So I came up asking myself this question: "Which one do I use?".
-
-So in order to answer this question I ask the community if you could explain what are the differences between these two? And if possible pros and cons? Because they really look very similar to me.
-
-node.js mongodb mongoose
-shareedit
-edited Aug 20 '17 at 7:36
-user608540
-asked Feb 25 '15 at 6:01
-
-Ravindra Galav
-1,35122 gold badges99 silver badges1616 bronze badges
-refer it : medium.com/@bugwheels94/… – DHIRAJ KATEKAR Nov 29 '18 at 10:31
-add a comment
-7 Answers
-activeoldestvotes
-
-183
-
-I assume you already know that MongoDB is a NoSQL database system which stores data in the form of BSON documents. Your question, however is about the packages for Node.js.
-
-In terms of Node.js, mongodb is the native driver for interacting with a mongodb instance and mongoose is an Object modeling tool for MongoDB.
+In terms of Node.js, mongodb is the native driver for interacting with a mongodb instance and mongoose
+is an Object modeling tool for MongoDB.
 
 Mongoose is built on top of the MongoDB driver to provide programmers with a way to model their data.
 
-EDIT: I do not want to comment on which is better, as this would make this answer opinionated. However I will list some advantages and disadvantages of using both approaches.
+EDIT: I do not want to comment on which is better, as this would make this answer opinionated. However
+I will list some advantages and disadvantages of using both approaches.
 
-Using Mongoose, a user can define the schema for the documents in a particular collection. It provides a lot of convenience in the creation and management of data in MongoDB. On the downside, learning mongoose can take some time, and has some limitations in handling schemas that are quite complex.
+Using Mongoose, a user can define the schema for the documents in a particular collection. 
+It provides a lot of convenience in the creation and management of data in MongoDB. On the downside,
+learning mongoose can take some time, and has some limitations in handling schemas that are quite complex.
 
-However, if your collection schema is unpredictable, or you want a Mongo-shell like experience inside Node.js, then go ahead and use the MongoDB driver. It is the simplest to pick up. The downside here is that you will have to write larger amounts of code for validating the data, and the risk of errors is higher.
-
-shareedit
-edited May 27 at 3:29
-answered Feb 25 '15 at 6:06
-
-ZeMoon
-16.8k44 gold badges4646 silver badges8989 bronze badges
-8
-That's quite an opinion-based question. Some might prefer a lower-level API. Why don't you check out Mongoose and the native driver, and then decide which one is better for you? – juunas Feb 25 '15 at 6:11
-3
-@RavindraGalav check the updated answer – ZeMoon Feb 25 '15 at 6:18
-@RavindraGalav you are welcome. Feel free to upvote and accept the answer. – ZeMoon Feb 25 '15 at 6:27
-1
-@Michael9 The native MongoDB driver for Node.js has the same name. Please note the words 'in terms of Node.js...'. Your edit was incorrect. – ZeMoon Feb 25 '15 at 6:44 
-2
-One should also consider the performance factor, please refer to this url, this guy has shared awesome benchmarks.medium.com/@bugwheels94/… – DHIRAJ KATEKAR Nov 29 '18 at 10:30 
-show 4 more comments
-
-38
-
-Mongo is NoSQL Database.
-
-If you don't want to use any ORM for your data models then you can also use native driver mongo.js: https://github.com/mongodb/node-mongodb-native.
-
-Mongoose is one of the orm's who give us functionality to access the mongo data with easily understandable queries.
-
-Mongoose plays as a role of abstraction over your database model.
-
-shareedit
-edited May 20 '18 at 10:50
-
-Nemo
-2,21822 gold badges2121 silver badges5050 bronze badges
-answered Feb 25 '15 at 6:35
-
-Anubhav Singh
-67155 silver badges1111 bronze badges
-Thanks @DushyantJoshi. – Anubhav Singh Jul 1 '17 at 17:17
-Good explanation. It all makes sense now. – Arslan Ramay May 31 '18 at 9:18
-1
-@ArslanRamay: medium.com/@bugwheels94/…, much helpful – DHIRAJ KATEKAR Nov 29 '18 at 10:32
-add a comment
-
-11
-
-One more difference I found with respect to both is that it is fairly easy to connect to multiple databases with mongodb native driver while you have to use work arounds in mongoose which still have some drawbacks.
-
-So if you wanna go for a multitenant application, go for mongodb native driver.
-
-shareedit
-answered Nov 19 '15 at 12:51
-
-Rahul
-32.5k2323 gold badges6161 silver badges8989 bronze badges
-add a comment
-
-4
-
-Mongodb and Mongoose are two different drivers to interact with MongoDB database.
-
-Mongoose : object data modeling (ODM) library that provides a rigorous modeling environment for your data. Used to interact with MongoDB, it makes life easier by providing convenience in managing data.
-
-Mongodb: native driver in Node.js to interact with MongoDB.
-
-shareedit
-edited Aug 11 '18 at 10:42
-answered Jun 26 '18 at 16:37
-
-dhaker
-45555 silver badges1414 bronze badges
-add a comment
-
-3
-
-If you are planning to use these components along with your proprietary code then please refer below information.
-
-Mongodb:
-
-It's a database.
-This component is governed by the Affero General Public License (AGPL) license.
-If you link this component along with your proprietary code then you have to release your entire source code in the public domain, because of it's viral effect like (GPL, LGPL etc)
-If you are hosting your application over the cloud, the (2) will apply and also you have to release your installation information to the end users.
-Mongoose:
-
-It's an object modeling tool.
-This component is governed by the MIT license.
-Allowed to use this component along with the proprietary code, without any restrictions.
-Shipping your application using any media or host is allowed.
+However, if your collection schema is unpredictable, or you want a Mongo-shell like experience inside Node.js,
+then go ahead and use the MongoDB driver. It is the simplest to pick up. 
+The downside here is that you will have to write larger amounts of code for validating the data, and the risk of errors is higher.
