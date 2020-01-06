@@ -1,4 +1,16 @@
 
+db.products.find({"price": 123})
+db.products.aggregate([{$bucket: {
+   groupBy:'$price',
+   boundaries: [123,999],
+     default: "Unknown",
+   output:{
+	num: {$sum:1}
+}
+
+}}])
+
+
 Aggregation in MongoDB. Aggregation in MongoDB is nothing but an operation used to process the data that returns the computed results.
 Aggregation basically groups 
 the data from multiple documents and operates in many ways on those grouped data in order to return one combined result.
