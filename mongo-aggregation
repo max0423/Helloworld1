@@ -1,0 +1,13 @@
+
+Aggregation in MongoDB. Aggregation in MongoDB is nothing but an operation used to process the data that returns the computed results.
+Aggregation basically groups 
+the data from multiple documents and operates in many ways on those grouped data in order to return one combined result.
+
+1.mongod to start db
+2.mongo, show dbs, show collections,
+3.db.collectons.find()
+
+
+4.db.products.aggregate([{$project: {_id: 0, gender:1, fullname: {$concat: ["$name", "$price"]}}}])
+
+The $project takes a document that can specify the inclusion of fields, the suppression of the _id field, the addition of new fields, 
