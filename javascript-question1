@@ -1,4 +1,4 @@
-
+  var args = Array.prototype.slice.call(arguments);
 Question 1. What's the difference between undefined and not defined in JavaScript
 Question 3. What is the drawback of declaring methods directly in JavaScript objects?
 Question 4. What is “closure” in javascript? Can you provide an example?
