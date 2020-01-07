@@ -1,0 +1,34 @@
+
+Question 1. What's the difference between undefined and not defined in JavaScript
+Question 3. What is the drawback of declaring methods directly in JavaScript objects?
+Question 4. What is “closure” in javascript? Can you provide an example?
+Question 5. Write a mul function which will work properly when invoked with following syntax.
+Question 7. How to check if an object is an array or not?
+Question 8. What will be the output of the following code?
+var output = (function(x) {
+  delete x;
+  return x;
+})(0);
+
+console.log(output);
+
+Question 11. What will be the output of the following code?
+var Employee = {
+  company: 'xyz'
+}
+var emp1 = Object.create(Employee);
+delete emp1.company
+console.log(emp1.company);
+
+Question 14. What will be the output of the following code?
+var bar = true;
+console.log(bar + 0);   
+console.log(bar + "xyz");  
+console.log(bar + true);  
+console.log(bar + false);
+
+
+Question 16. What will be the output of the following code?
+// NFE (Named Function Expression)
+var foo = function bar() { return 12; };
+typeof bar();
