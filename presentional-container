@@ -1,0 +1,14 @@
+
+presentational-container components;
+
+the container components will concerned with
+how things works,
+and presentational components will concerned
+with how things looks
+
+
+const Button = props => {
+   <button onClick={() => props.onClick()}
+   {props.text}
+   </button>
+}
