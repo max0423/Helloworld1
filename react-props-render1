@@ -1,1 +1,14 @@
-    The term render prop refers to a technique for sharing code between React components using a prop whose value is a function. - Reactjs blog
+    The term render prop refers to a technique for sharing code between React components using a prop whose value is a function.
+    - Reactjs blog
+    
+    
+    
+render prop refers to a technique for sharing code
+between React components using a prop whose value is a function.
+
+
+Higher orde components -- HOC
+
+a pattern where a function takes a component
+as an argument and return a new component
+
