@@ -1,4 +1,8 @@
 
+JSON Web Token (JWT) is an open standard
+that defines a compact and self-contained way for securely transmitting information between parties as a JSON object.
+
+
 A closure is a function defined inside another function (called parent function) and has access to the variable 
 which is declared and defined in parent function scope.
 
