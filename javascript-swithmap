@@ -1,4 +1,6 @@
 
+Static type-checking is the process of verifying the type safety of a program based on analysis of a program's source code. Dynamic type-checking is the process of verifying the type safety of a program at runtime.
+
 
 what is anonymous functions?
 
