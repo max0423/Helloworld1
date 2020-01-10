@@ -1,0 +1,2 @@
+In redux we have a store, actions and reducers. 
+Here, the data flow is uni-directional and we can have a decoupled design where data management is separated from the UI.
