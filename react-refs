@@ -1,0 +1,15 @@
+
+constructor(props)
+{
+  super(props);
+  this.inputRef = React.createRef();
+  
+}
+
+<input type="text" ref = { this.inputRef}
+
+
+componentDidMount(()
+{
+  console.log(this.inputRef);
+}
