@@ -29,6 +29,12 @@ Which can according certain scenario to resolve or reject a value.
 
 what is obeservable?
 
+const button = document.querySelector('button')
+const observable = Rx.Observable.fromEvent(button, 'click')
+observable
+  .switchMap(event => Rx.Observable.timer(1000)) // <- use the data of the first observable in the second one (if you want) and return the new observable
+  .subscribe(data => console.log(data))
+
 
 Observable provide support for passing message between publisher and subscriber in our app.
 The observable is used for asynchrounrous stream data.
