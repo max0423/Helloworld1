@@ -34,6 +34,15 @@ const observable = Rx.Observable.fromEvent(button, 'click')
 observable
   .switchMap(event => Rx.Observable.timer(1000)) // <- use the data of the first observable in the second one (if you want) and return the new observable
   .subscribe(data => console.log(data))
+  
+  import 'rxjs/add/observable/fromPromise';
+import { Observable } from "rxjs/Observable";
+// convet promise to observable
+const subscription = Observable.fromPromise(
+    firebase.auth().createUserWithEmailAndPassword(email, password)
+);
+subscription.subscribe(firebaseUser => /* Do anything with data received */,
+                       error => /* Handle error here */);
 
 
 Observable provide support for passing message between publisher and subscriber in our app.
