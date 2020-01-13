@@ -8,6 +8,11 @@ Container components are components that specify the data a presentational compo
   JSX is javascript extention. It’s shorthand for JavaScript XML. it used by React to utilizes the    JavaScript along with HTML which look like template syntax. This makes the HTML file really easy to understand. 
   And make applications more robust.
 
+what is props.children?
+
+My simple explanation of what this.props.children does is that 
+it is used to display whatever you include between the opening and closing tags when invoking a component.
+
 
 what are features of React?
 
