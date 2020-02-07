@@ -1,0 +1,7 @@
+
+Test.propTypes = {
+    str: PropTypes.strng,
+    booL; PropTypes.bool,
+    strOrNum: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+
+}
