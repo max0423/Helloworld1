@@ -1,15 +1,8 @@
 
-GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a
-complete and understandable description of the data in your API, gives clients the power to 
-ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.
+what is GraphQL,
 
+application layer query language.
+can be used with any type of database.
+ability to ask for exactly what you need and nothing more.
 
-GraphQL was developed to cope with the need for more flexibility and efficiency! 
-It solves many of the shortcomings and inefficiencies that developers experience when interacting with REST APIs.
-Overfetching means that a client downloads more information than is actually required in the app Underfetching generally
-means that a specific endpoint doesn’t provide enough of the required information. 
-The client will have to make additional requests to fetch everything it needs. 
-GraphQL uses a strong type system to define the capabilities of an API. 
-All the types that are exposed in an API are written down in a schema using the GraphQL Schema Definition Language (SDL). 
-This schema serves as the contract between the client and the server to define how a client can 
-access the data.
+get multiple resources in a single request.
