@@ -1,3 +1,9 @@
 git checkout dmgr2      # gets you "on branch dmgr2"
 git fetch origin        # gets you up to date with origin
 git merge origin/master
+
+git chechout demo1
+
+git fetch origin demo  --  branch name
+
+git merge origin demo  -- merge to demo1
