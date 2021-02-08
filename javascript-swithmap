@@ -45,6 +45,9 @@ const subscription = Observable.fromPromise(
 );
 subscription.subscribe(firebaseUser => /* Do anything with data received */,
                        error => /* Handle error here */);
+                       
+ RxJS (Reactive Extensions for JavaScript) is a library for reactive programming using observables 
+ that makes it easier to compose asynchronous or callback-based code.
 
 
 Observable provide support for passing message between publisher and subscriber in our app.
