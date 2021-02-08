@@ -4,7 +4,8 @@ Here, the data flow is uni-directional and we can have a decoupled design where 
 36. What is Redux?
 Redux is a state management tool. While it’s mostly used with React, it can be used with any other JavaScript framework or library.
 Redux allows you to manage your entire application state in one object, called the Store.
-Updates to the Store will trigger re-renders of components that are connected to the part of the store that was updated. When we want to update something, we call an Action. We also create functions to handle these actions and return the updated Store. These functions are called Reducers.
+Updates to the Store will trigger re-renders of components that are connected to the part of the store that was updated. When we want to update something, 
+we call an Action. We also create functions to handle these actions and return the updated Store. These functions are called Reducers.
 
 
 
