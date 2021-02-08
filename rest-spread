@@ -11,4 +11,6 @@ An object’s prototype attribute specifies the object from which it inherits pr
 rest and spread operator
 where rest parameter collects items into an array, the spread operator unpacks the collected elements into single elements.
 
+
+It is a collection of all remaining elements (hence, the name rest, as in “the rest of the elements”) into an array.
 spread operator passing it to a function or put it into array.
