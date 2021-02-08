@@ -58,6 +58,10 @@ A stream of data possible asynchronous or possible multiple value over time. Whe
 execute the code when receive the value.
 
 
+The main difference between switchMap and other flattening operators is the cancelling effect. On each emission the previous inner observable (the result of the function you supplied) 
+is cancelled and the new observable is subscribed. You can remember this by the phrase switch to a new observable.
+
+
 what is swithmap and mergemap and concat map?
 
 swithmap:
