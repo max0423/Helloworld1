@@ -5,3 +5,9 @@ A microservice is loosely coupled and interacts with other microservices for wel
 they remain consistent and available in the presence of failure, 
 
 meaning even if the machine goes down that host a microservice, the functionality provided by the service should still be offered by the application.
+
+
+Microservices are an architectural approach based on building an application as a collection of small services.
+
+Let’s think of an application as a store. Applications are traditionally “monolithic” which means they are built as a single, autonomous unit --
+Everything is contained inside the unit
