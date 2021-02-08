@@ -8,7 +8,8 @@ If presentational components are concerned with how things look, container compo
 Container components are components that specify the data a presentational component should render.
 
 6. What is JSX?
-  JSX is javascript extention. It’s shorthand for JavaScript XML. it used by React to utilizes the    JavaScript along with HTML which look like template syntax. This makes the HTML file really easy to understand. 
+  JSX is javascript extention. It’s shorthand for JavaScript XML. it used by React to utilizes the    
+  JavaScript along with HTML which look like template syntax. This makes the HTML file really easy to understand. 
   And make applications more robust.
 
 what is props.children?
