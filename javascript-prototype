@@ -21,3 +21,9 @@ react component which dependent on props to conditionally update the component u
 react.usememo and react usecallback receives a function as its first arguments and dependencies
 array as the second one. the main difference is usememo will call the function and return the value.
 while usecallback will return the function without calling
+
+What is state in React?
+State of a component is an object that holds some information that may change over the lifetime of the component. We should always try to make our state as simple as possible and minimize the number of stateful components.
+State is similar to props, but it is private and fully controlled by the component. i.e, It is not accessible to any component other than the one that owns and sets it.
+What are props in React?
+Props are inputs to components. They are data passed down from a parent component to a child component.
