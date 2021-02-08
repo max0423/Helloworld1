@@ -12,8 +12,12 @@ when the function finish to excution, then will run the callback function.
 what is prototype?
 
 each time we create a function in javascript, javascript engine adds
-an extra property called prototype. the prototype property is an object
+an extra property called prototype. the prototype property is an 
 has a contructor propery which point back the function object.
 
 React.memo is a higher-order component (or HOC for short) which accepts a 
 react component which dependent on props to conditionally update the component using memoization, 
+
+react.usememo and react usecallback receives a function as its first arguments and dependencies
+array as the second one. the main difference is usememo will call the function and return the value.
+while usecallback will return the function without calling
