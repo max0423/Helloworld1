@@ -1,4 +1,6 @@
-
+Companies and development teams of all sizes use MongoDB because: The document data model is a powerful way 
+to store and retrieve data that allows developers to move fast. 
+MongoDB's horizontal, scale-out architecture can support huge volumes of both data and traffic.
 
 
 I assume you already know that MongoDB is a NoSQL database system which stores data in the form of BSON documents.
