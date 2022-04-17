@@ -1,0 +1,36 @@
+let logerSub$
+const logerOb$ = new Observable(subcriber =>  {
+logerSubs$ = subscriber})
+
+const obsBuffer$ = logerOb$.pipe(
+ buffertime(1000)
+ )
+ 
+ Class Logging{
+ 
+   constructor(){
+     logerOb$.subscriber(data =>{
+     prepareRequestArr(data)
+   }
+   
+   
+   prepareReqestArr(logs){
+      sendLogs(logs)
+   
+   }
+   
+   sendLogs(logs){
+   
+    postRequest(logs)
+ 
+ }
+ 
+ postRequests(logs){
+    axios(logs).then(response=>response).catch()
+ }
+ 
+ log(data){
+   logerSubs.next(data)
+ }
+ 
+ }
