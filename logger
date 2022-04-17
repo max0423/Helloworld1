@@ -9,7 +9,7 @@ const obsBuffer$ = logerOb$.pipe(
  Class Logging{
  
    constructor(){
-     logerOb$.subscriber(data =>{
+     obsBuffer$.subscriber(data =>{
      prepareRequestArr(data)
    }
    
