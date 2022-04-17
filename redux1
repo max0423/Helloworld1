@@ -34,4 +34,27 @@ It maintains a standardized structure and behavior and is used for developing si
 The <switch> tag when in use matches the URL with the defined routes in sequential order. When the first match is found,
 it renders the specified route. And then bypassing the remaining routes.
 
+48. what is redux-thunk, and how it works?
+   with redux-thunk, we can create async action creator, which can return function from the ation creator
+   dispacth(fetchuserRequest())
+    const fetchUsers = () =>{
+      return function(dispatch){
+         axios.get('url').then(
+          response =>{
+          dispatch(fetchUserSuccess(users)
+          
+         )
+      })
+      .catch{
+        error =>{
+        dispatch
+      }
+    
+    }
+
+
+
+
+
+  
 
