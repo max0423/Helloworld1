@@ -1,0 +1,3 @@
+what is event sourcing architeture?
+The fundamental idea of Event Sourcing is that of ensuring every change to the state of an application is captured in an event object, 
+and that these event objects are themselves stored in the sequence 
