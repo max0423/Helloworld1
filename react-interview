@@ -4,7 +4,9 @@ Swagger is used together with a set of open-source software tools to design, bui
  Swagger includes automated documentation, code generation, and test-case generation.
 
 What is the difference between state and props?
-Both props and state are plain JavaScript objects. While both of them hold information that influences the output of render, they are different in their functionality with respect to component. Props get passed to the component similar to function parameters whereas state is managed within the component similar to variables declared within a function.
+Both props and state are plain JavaScript objects. While both of them hold information that influences the output of render, 
+they are different in their functionality with respect to component. Props get passed to the component similar to function parameters whereas state
+is managed within the component similar to variables declared within a function.
 What is state in React?
 State of a component is an object that holds some information that may change over the lifetime of the component. We should always try to make our state as simple as possible and minimize the number of stateful components.
 State is similar to props, but it is private and fully controlled by the component. i.e, It is not accessible to any component other than the one that owns and sets it.
@@ -20,7 +22,8 @@ This reactProp (or whatever you came up with) name then becomes a property attac
 props.reactProp
 
 1.	What is JSX?
-JSX is a XML-like syntax extension to ECMAScript (the acronym stands for JavaScript XML). Basically it just provides syntactic sugar for the React.createElement() function, giving us using HTML like template syntax.
+JSX is a XML-like syntax extension to ECMAScript (the acronym stands for JavaScript XML). Basically it just provides syntactic
+sugar for the React.createElement() function, giving us using HTML like template syntax.
 In the example below text inside <h1> tag is returned as JavaScript function to the render function.
 class App extends React.Component {
   render() {
@@ -38,7 +41,8 @@ Components are the building blocks of any React app and a typical React app will
 What are Pure Components?
 React.PureComponent is exactly the same as React.Component except that it handles the shouldComponentUpdate() method for you. When props or state changes, PureComponent will do a shallow comparison on both props and state. Component on the other hand won't compare current props and state to next out of the box. Thus, the component will re-render by default whenever
 What is "key" prop and what is the benefit of using it in arrays of elements?
-A key is a special string attribute you should include when creating arrays of elements. Key prop helps React identify which items have changed, are added, or are removed.
+A key is a special string attribute you should include when creating arrays of elements. Key prop helps React identify
+which items have changed, are added, or are removed.
 
 What is the use of refs?
 The ref is used to return a reference to the element. They should be avoided in most cases, however, they can be useful when you need a direct access to the DOM element or an instance of a component.
