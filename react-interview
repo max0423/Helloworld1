@@ -37,7 +37,9 @@ class App extends React.Component {
 2.	
 3.	What is the difference between Element and Component?
 An Element is a plain object describing what you want to appear on the screen in terms of the DOM nodes or other components. Elements can contain other Elements in their props. 
-Components are the building blocks of any React app and a typical React app will have many of these. Simply put, a component is a JavaScript class or function that optionally accepts inputs properties(props) and returns a React element that describes how a section of the UI (User Interface) should appear.
+Components are the building blocks of any React app and a typical React app will have many of these. Simply put, a component is a JavaScript class 
+or function that optionally accepts inputs properties(props) and returns a React element that describes
+ how a section of the UI (User Interface) should appear.
 What are Pure Components?
 React.PureComponent is exactly the same as React.Component except that it handles the shouldComponentUpdate() method for you. When props or state changes, PureComponent will do a shallow comparison on both props and state. Component on the other hand won't compare current props and state to next out of the box. Thus, the component will re-render by default whenever
 What is "key" prop and what is the benefit of using it in arrays of elements?
