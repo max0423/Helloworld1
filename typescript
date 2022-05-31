@@ -3,7 +3,8 @@ including primitive, union, and intersection types.
 
 The specification goes on to mention:
 
-Interface types have many similarities to type aliases for object type literals, but since interface types offer more capabilities they are generally preferred to type aliases. For example, the interface type
+Interface types have many similarities to type aliases for object type literals, but since interface types offer more capabilities 
+they are generally preferred to type aliases. For example, the interface type
 
 interface Point {
     x: number;
