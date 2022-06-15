@@ -12,3 +12,6 @@ Switch map
 using switchmap to connect two observable,when values being emitted on that outer observable, then it will
 trigger the inner observalbe. also it cancle the outer observalbe.
 you won't receive the outer observable event, you will receive the values of the inner observable.
+
+combineLast
+When any observable emits a value, emit the last emitted value from each.
