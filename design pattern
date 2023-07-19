@@ -3,3 +3,17 @@ Factory method:
 Define an interface(abstract class)for creating an object,
 but let subclass decide which class to instantiate.
 the factory methods lets a class defer instantiate to subclass
+
+
+
+As of my last update in September 2021, there is no specific design pattern called the "solid design pattern." However, I believe you might be referring to the SOLID principles, which are a set of five design principles for writing maintainable and scalable software. Each letter in the acronym SOLID represents one of these principles:
+
+Single Responsibility Principle (SRP): A class should have only one reason to change, meaning it should have a single responsibility or task.
+
+Open/Closed Principle (OCP): Software entities (classes, modules, functions, etc.) should be open for extension but closed for modification. This principle encourages using inheritance, interfaces, and abstract classes to add new functionality instead of modifying existing code.
+
+Liskov Substitution Principle (LSP): Objects of a superclass should be replaceable with objects of a subclass without affecting the correctness of the program. In other words, subclasses should be able to replace their parent classes without introducing unexpected behavior.
+
+Interface Segregation Principle (ISP): A client should not be forced to implement interfaces it does not use. This principle encourages creating smaller and more specific interfaces tailored to the needs of the clients that use them.
+
+Dependency Inversion Principle (DIP): High-level modules should not depend on low-level modules; both should depend on abstractions. Abstractions should not depend on details; details should depend on abstractions. This principle encourages the use of dependency injection and inversion of control to achieve loose coupling between classes and components.
