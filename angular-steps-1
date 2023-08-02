@@ -6,5 +6,14 @@ import  {Injectable} from '@angular/core';
   providerIn:'root'
 })
 export class InspectionAppService{
+    readonly inspectionApiUrl = "https://localhost: 7240/api"
+    constructor(private http: HttpClient){}
+  getInspctionList(): Observable<any[]> {
+    return this.http.get<any[]>(this.inspectionApiUrl + '/inspections')
+  }
+
+  addInspection(data:any){
+    return this.http.post(this.inspectionApiUrl + '/inspections', data);
+  }
 
 }
