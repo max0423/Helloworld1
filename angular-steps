@@ -8,4 +8,4 @@
 7. ng g service inspection-api
 8. import {httpClientModule}
 9. import { FormsModule, ReactiveFormsModule}
-
+10. imports: [BrowserModule, HttpClientModule,FormsModule}, provides: [inspection-api]
