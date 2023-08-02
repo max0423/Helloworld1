@@ -1,2 +1,11 @@
 
 1. ng new angular13-inspection-api
+2. cd angular13-inspection-api
+3. copy bootstrap css and javascript
+4. ng g c inspection
+5. ng g c inspection/show-inspection
+6. ng g c inspection/add-edit-inspection
+7. ng g service inspection-api
+8. import {httpClientModule}
+9. import { FormsModule, ReactiveFormsModule}
+
