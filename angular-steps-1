@@ -5,3 +5,6 @@ import  {Injectable} from '@angular/core';
 @Injectable({
   providerIn:'root'
 })
+export class InspectionAppService{
+
+}
