@@ -1,6 +1,6 @@
 
 // So, the mergeMap operator returns an observable that emits either a getPostsSuccess action or a getPostsFailure action,
-depending on whether the getPosts() method succeeds or fails.
+// depending on whether the getPosts() method succeeds or fails.
 import { Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { catchError, map, mergeMap, of } from 'rxjs';
