@@ -1,0 +1,9 @@
+yoor company is analyzing malware software which targets numerial record
+
+the malware checks the value of each record and the values of some of its neighbors. the record is replace by 0 when it is samller or equal to eithe of those neighbors
+
+for each number, it matches the following pattern, where position 'X', is to positions 'T': T,,,X,,,,T. postions '' represent neighbors that are ignored.positions further beyond the T's, to thr far left or far right,are also ingored.
+
+for example: new int[] {19,2,0,87,1,40,80,77,77,77,77}
+
+what is doing about the malware software?
