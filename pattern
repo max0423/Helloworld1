@@ -2,8 +2,15 @@ yoor company is analyzing malware software which targets numerial record
 
 the malware checks the value of each record and the values of some of its neighbors. the record is replace by 0 when it is samller or equal to eithe of those neighbors
 
-for each number, it matches the following pattern, where position 'X', is to positions 'T': T,,,X,,,,T. postions '' represent neighbors that are ignored.positions further beyond the T's, to thr far left or far right,are also ingored.
+for each number, it matches the following pattern, where position 'X', is to positions 'T': T,,,X,,,,T.
+postions '' represent neighbors that are ignored.positions further beyond the T's, to thr far left or far right,are also ingored.
 
 for example: new int[] {19,2,0,87,1,40,80,77,77,77,77}
 
 what is doing about the malware software?
+
+
+Based on the description you provided, the malware software is checking the value of each record and the values of some of its neighbors. If the record is smaller or equal to either of those neighbors, it is replaced by 0. The pattern that the malware is looking for is a number surrounded by two T's, with two ignored neighbors represented by underscores on either side. The malware is ignoring any positions beyond the T's to the far left or far right.
+
+In the example you provided, the malware would check each number in the array and its neighbors according to the pattern described above. If a number is smaller or equal to either of its neighbors, it would be replaced by 0. The resulting array would be:
+
