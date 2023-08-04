@@ -1,1 +1,13 @@
 
+export const initialState: PostsStateInterface = {
+  isLoading: false,
+  posts: [],
+  error: null,
+};
+
+export const reducers = createReducer(
+  initialState,
+  on(PostsActions.getPosts, (state) => {
+    console.log(state);
+    return { ...state, isLoading: true };
+  }),
