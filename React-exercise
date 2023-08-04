@@ -5,3 +5,25 @@ import rootReducer from './reducers';
 const store = createStore(rootReducer);
 
 export default store;
+
+In this example, we're using the createStore function from the redux library to create a new Redux store, 
+and passing the rootReducer function as an argument. We're exporting the store so that we can use it in our React components.
+
+Create a new file called reducers.js to define the Redux reducers:
+
+const initialState = {
+  count: 0
+};
+
+function rootReducer(state = initialState, action) {
+  switch (action.type) {
+    case 'INCREMENT':
+      return { ...state, count: state.count + 1 };
+    case 'DECREMENT':
+      return { ...state, count: state.count - 1 };
+    default:
+      return state;
+  }
+}
+
+export default rootReducer;
