@@ -1,4 +1,19 @@
 
+export const getPosts = createAction('[Posts] Get Posts');
+export interface PostInterface {
+  id: string;
+  title: string;
+}
+
+export const getPostsSuccess = createAction(
+  '[Posts] Get Posts success',
+  props<{ posts: PostInterface[] }>()
+);
+export const getPostsFailure = createAction(
+  '[Posts] Get Posts failure',
+  props<{ error: string }>()
+);
+
 export const initialState: PostsStateInterface = {
   isLoading: false,
   posts: [],
