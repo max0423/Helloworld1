@@ -26,3 +26,41 @@ export const reducers = createReducer(
     console.log(state);
     return { ...state, isLoading: true };
   }),
+
+
+export const selectFeature = (state: AppStateInterface) => state.posts;
+
+export const isLoadingSelector = createSelector(
+  selectFeature,
+  (state) => state.isLoading
+);
+
+export const postsSelector = createSelector(
+  selectFeature,
+  (state) => state.posts
+);
+
+export const errorSelector = createSelector(
+  selectFeature,
+  (state) => state.error
+);
+
+
+@Injectable()
+export class PostsEffects {
+  getPosts$ = createEffect(() =>
+    this.actions$.pipe(
+      ofType(PostsActions.getPosts),
+      mergeMap(() => {
+        return this.postsService.getPosts().pipe(
+          map((posts) => PostsActions.getPostsSuccess({ posts })),
+          catchError((error) =>
+            of(PostsActions.getPostsFailure({ error: error.message }))
+          )
+        );
+      })
+    )
+  );
+
+  constructor(private actions$: Actions, private postsService: PostsService) {}
+}
