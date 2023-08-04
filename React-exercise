@@ -57,3 +57,6 @@ const mapDispatchToProps = dispatch => ({
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
+
+Provider is a component provided by the react-redux library that allows you to provide the Redux store to all components in the component tree. It is used to wrap the root component of your application, 
+so that all child components can access the store's state and dispatch actions to update the state.
