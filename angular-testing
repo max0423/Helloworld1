@@ -1,0 +1,24 @@
+import axios from 'axios';
+
+describe('MyService', () => {
+  let myService: MyService;
+  let axiosMock: jasmine.Spy;
+
+  beforeEach(() => {
+    myService = new MyService();
+    axiosMock = spyOn(axios, 'get').and.returnValue(Promise.resolve({ data: 'mock data' }));
+  });
+
+  it('should call axios.get with the correct URL', async () => {
+    const result = await myService.getData();
+    expect(axiosMock).toHaveBeenCalledWith('https://example.com/data');
+    expect(result).toEqual('mock data');
+  });
+});
+
+class MyService {
+  async getData() {
+    const response = await axios.get('https://example.com/data');
+    return response.data;
+  }
+}
