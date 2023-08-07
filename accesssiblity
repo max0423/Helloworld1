@@ -1,0 +1,23 @@
+When designing an Angular component to follow WCAG guidelines, there are several important areas that you should consider to ensure that your component is accessible to all users, including those with disabilities. Here are some of the most important areas to consider:
+
+Color contrast: Ensure that there is sufficient contrast between text and background colors. 
+Use tools like the WebAIM Color Contrast Checker to check the contrast ratio.
+
+Keyboard navigation: Ensure that all functionality on the page can be accessed using a keyboard.
+Use the tabindex attribute to control the order in which elements are focused.
+
+Alternative text for images: Use the alt attribute to provide alternative text for images. 
+This helps users who are visually impaired understand the content of the image.
+
+ARIA attributes: Use ARIA attributes to provide additional information about the purpose and function of elements on the page.
+For example, use aria-label to provide a label for a button that is not clear from the text on the button.
+
+Semantic HTML: Use HTML elements that accurately describe the content they contain. For example, 
+use <button> elements for buttons, <input> elements for form inputs, and <h1>-<h6> elements for headings.
+
+Focus styles: Ensure that there is a visible focus indicator for all interactive elements on the page. 
+This helps users who are using a keyboard or other assistive technology to navigate the page.
+
+Screen reader compatibility: Test your component with screen readers to ensure that it is compatible with assistive technology.
+
+By considering these areas when designing your Angular component, you can create a more accessible user interface that is usable by all users, including those with disabilities.
