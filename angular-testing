@@ -22,3 +22,7 @@ class MyService {
     return response.data;
   }
 }
+
+In this example, we're testing that the axios.get method is called with the correct URL when the getData method of the MyService object is called. We use spyOn to create a spy object called axiosMock on the axios.get method, and then we use and.returnValue to specify that the method should return a resolved Promise with the value { data: 'mock data' }. Finally, we use toHaveBeenCalledWith to verify that the axios.get method was called with the URL 'https://example.com/data', and we use toEqual to verify that the getData method returns the expected value.
+
+Overall, mock functions are a powerful tool that allows you to create test doubles for functions or methods of real-world objects and test that they behave correctly.
