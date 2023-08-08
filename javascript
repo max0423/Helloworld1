@@ -1,3 +1,32 @@
+function myFunction() {
+  console.log('Function called');
+}
+
+const debouncedFunction = debounceTime(500, myFunction);
+
+// Call the debounced function
+debouncedFunction();
+
+// Cancel the debounced function before it is executed
+clearTimeout(debouncedFunction.timeoutId);
+
+
+function debounceTime(delay, callback) {
+  let timerId;
+  const debouncedFunction = function(...args) {
+    if (timerId) {
+      clearTimeout(timerId);
+    }
+    timerId = setTimeout(() => {
+      callback.apply(this, args);
+      timerId = null;
+    }, delay);
+  };
+  debouncedFunction.timeoutId = timerId;
+  return debouncedFunction;
+}
+
+
 apply() is used to call a function with a given this value and arguments provided as an array,
 while bind() is used to create a new function with a given this value and arguments.
 
