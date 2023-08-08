@@ -1,4 +1,5 @@
-
+apply() is used to call a function with a given this value and arguments provided as an array,
+while bind() is used to create a new function with a given this value and arguments.
 
 
 The Object.assign() method is used to copy the values of all enumerable own properties from one 
