@@ -51,6 +51,10 @@ max0423
 what is the biggest challenge for the project?
 
 GitHub Copilot
+1. accuary issue.
+2. security issue.
+3. api traffic issue.
+
 The biggest challenge for the project of implementing Angular and Acuant library with reactive programming to implement the facial 
 erification mobile app could be ensuring the accuracy and reliability of the facial recognition technology.
 Facial recognition technology can be affected by various factors such as lighting, facial expressions, and image quality,
