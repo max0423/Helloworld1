@@ -26,6 +26,14 @@ function debounceTime(delay, callback) {
   return debouncedFunction;
 }
 
+function myFunction(...args) {
+  console.log(args);
+}
+
+
+In this example, the ...args syntax allows the function to accept any number of arguments, which are then stored in an array called args.
+You can then use this array to perform operations within the function.
+
 
 apply() is used to call a function with a given this value and arguments provided as an array,
 while bind() is used to create a new function with a given this value and arguments.
