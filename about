@@ -8,6 +8,20 @@ reliability of the application by implementing caching and optimizing API calls.
 cross-functional teams to ensure the successful deployment and maintenance of the application.
 Demonstrated strong problem-solving skills and attention to detail in identifying and resolving issues in a timely manner."
 
+
+GitHub Copilot
+1. accuary issue.
+2. security issue.
+3. api traffic issue.
+
+The biggest challenge for the project of implementing Angular and Acuant library with reactive programming to implement the facial 
+erification mobile app could be ensuring the accuracy and reliability of the facial recognition technology.
+Facial recognition technology can be affected by various factors such as lighting, facial expressions, and image quality,
+which can lead to false positives or false negatives. Therefore, it is important to thoroughly test and validate the facial recognition
+feature to ensure that it works accurately and reliably in different scenarios and conditions. 
+Additionally, it is important to ensure that the application complies with privacy and security regulations, 
+as facial recognition technology can raise concerns about data privacy and security.
+
 This example highlights the specific technologies and methodologies you used, as well as the features 
 and functionality you implemented. It also emphasizes your collaboration skills and problem-solving abilities. M
 ake sure to tailor your resume to the specific job you're applying for and highlight the skills and experiences that are most relevant to the position.
