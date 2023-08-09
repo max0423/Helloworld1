@@ -1,3 +1,6 @@
+== check the reference.
+equal() chceck the content
+
 In C#, a data source for LINQ (Language-Integrated Query) can be any collection of objects that implements the IEnumerable<T>
 or IQueryable<T> interface. This includes arrays, lists, dictionaries, and other collection classes.
 
