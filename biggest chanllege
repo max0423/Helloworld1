@@ -1,3 +1,7 @@
+Acuant is a software company that provides identity verification and authentication solutions. 
+They offer a range of products and services that use advanced technologies such as artificial intelligence,
+machine learning, and biometrics to verify the identity of individuals and prevent fraud.
+
 Sure, here is a high-level overview of how to implement Angular and Acuant library with reactive programming to implement the facial verification mobile app:
 
 Set up an Angular project: Use the Angular CLI to create a new Angular project.
