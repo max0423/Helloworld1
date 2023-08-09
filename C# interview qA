@@ -1,0 +1,19 @@
+In C#, a data source for LINQ (Language-Integrated Query) can be any collection of objects that implements the IEnumerable<T>
+or IQueryable<T> interface. This includes arrays, lists, dictionaries, and other collection classes.
+
+The IEnumerable<T> interface is the most basic interface for collections in C#. It defines a method called GetEnumerator that returns an enumerator,
+which can be used to iterate over the elements in the collection.
+
+The IQueryable<T> interface is a more advanced interface that is used for querying data from a database or other data source.
+It extends the IEnumerable<T> interface and adds support for deferred execution and query translation.
+
+Here's an example of how to use an array as a data source for LINQ:
+
+In this example, we define an array of integers called numbers and use it as a data source for a LINQ query.
+The query uses a where clause to filter the even numbers from the array and a select clause to project the filtered numbers into a new sequence.
+
+We then use a foreach loop to iterate over the resulting sequence and print out each even number to the console.
+
+Note that LINQ can also be used to query data from a database or other data source, such as a web service or XML file. 
+In these cases, the data source is typically represented by an IQueryable<T> object, 
+which allows LINQ to translate the query into a format that can be executed by the data source.
