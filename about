@@ -1,4 +1,16 @@
+Sure, here's an example of how you could write about your experience implementing an online credit card service using Angular with ngrx and event-driven programming on your resume:
 
+"Implemented an online credit card service using Angular with ngrx and event-driven programming. 
+Developed a scalable and responsive user interface that allowed customers to manage their credit card accounts, view transaction history, and make payments.
+Utilized ngrx to manage the application state and implemented event-driven programming to ensure
+seamless communication between the front-end and back-end systems. Improved the performance and 
+reliability of the application by implementing caching and optimizing API calls. Collaborated with
+cross-functional teams to ensure the successful deployment and maintenance of the application.
+Demonstrated strong problem-solving skills and attention to detail in identifying and resolving issues in a timely manner."
+
+This example highlights the specific technologies and methodologies you used, as well as the features 
+and functionality you implemented. It also emphasizes your collaboration skills and problem-solving abilities. M
+ake sure to tailor your resume to the specific job you're applying for and highlight the skills and experiences that are most relevant to the position.
 
 my name is max lin, I am a senior
 react developer at RBC capital market,
