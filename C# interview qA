@@ -20,3 +20,10 @@ We then use a foreach loop to iterate over the resulting sequence and print out 
 Note that LINQ can also be used to query data from a database or other data source, such as a web service or XML file. 
 In these cases, the data source is typically represented by an IQueryable<T> object, 
 which allows LINQ to translate the query into a format that can be executed by the data source.
+In C#, a delegate is a type that represents a reference to a method with a specific signature. Delegates are similar to function pointers in C++, and they allow you to pass methods as arguments to other methods or store them as variables.
+
+An event is a mechanism in C# that allows an object to notify other objects when something happens. Events are based on delegates, and they allow you to define a set of methods that can be called when the event is raised.
+
+The relationship between delegates and events is that events are based on delegates. When you define an event, you are actually defining a delegate type that represents the signature of the methods that can be called when the event is raised.
+
+Here's an example of how to define a delegate and an event in C#:
