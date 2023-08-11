@@ -1,6 +1,7 @@
 React doesn't strictly follow the traditional Model-View-Controller (MVC) architecture, 
 but rather it adheres to a different architectural pattern called the "Component-Based Architecture." 
-While there are similarities between the two, there are also important differences that contribute to React's design philosophy 
+While there are similarities between the two, there are also important differences that contribute to React's design 
+philosophy 
 and its effectiveness in building user interfaces.
 
 Here's why React doesn't align precisely with the MVC architecture:
@@ -20,10 +21,13 @@ The process of comparing the Virtual DOM with the actual DOM and making necessar
 This aspect of React's design is crucial for achieving high performance.
 
 Unidirectional Data Flow: While MVC often involves bidirectional data flow between models and views, 
-React emphasizes a unidirectional data flow. Data in React typically flows from parent components to child components through props.
-This one-way data flow simplifies debugging, helps prevent unexpected side effects, and makes applications easier to reason about.
+React emphasizes a unidirectional data flow. Data in React typically flows from parent components to child components 
+through props.
+This one-way data flow simplifies debugging, helps prevent unexpected side effects, and makes applications easier to 
+reason about.
 
-Simplicity and Flexibility: React aims for simplicity and flexibility. It doesn't enforce a specific application structure or dictate
+Simplicity and Flexibility: React aims for simplicity and flexibility. It doesn't enforce a specific application
+structure or dictate
 how you manage state or handle routing. This allows developers to choose libraries and patterns that suit their needs, 
 which can be particularly beneficial in complex applications.
 
