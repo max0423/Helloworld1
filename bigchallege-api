@@ -13,7 +13,7 @@ In addition to security, you would also need to ensure that your application is 
  This would require careful design and testing of your application architecture, as well as the use of some caching technologies 
  to ensure that your application can handle the expected traffic levels.
 
-in term of architecture aspect, 
+inside term of architecture aspect, 
 
 we use Event-driven architecture to desing credit card online services which implements for a scalable and loosely coupled system 
  in an event-driven application
