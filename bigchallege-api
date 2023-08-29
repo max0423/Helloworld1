@@ -19,7 +19,6 @@ we use Event-driven architecture to desing credit card online services which all
 that can handle a large number of events and requests. In an event-driven application
  the api respond to events that occur within the system or from external sources, 
  rather than relying on a central controller to manage the flow of data.
- //Use a message to manage the flow of events between the producers and consumers. 
  This allows for a scalable and fault-tolerant system that can handle a large number of events.
 
 
