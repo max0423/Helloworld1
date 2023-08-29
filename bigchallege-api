@@ -16,10 +16,10 @@ In addition to security, you would also need to ensure that your application is 
 in term of architecture aspect, 
 
 we use Event-driven architecture to desing credit card online services which allows for a scalable and loosely coupled system 
-that can handle a large number of events and requests. In an event-driven application
+ in an event-driven application
  the api respond to events that occur within the system or from external sources, 
  rather than relying on a central controller to manage the flow of data.
- This allows for a scalable and fault-tolerant system that can handle a large number of events.
+ This allows for a the scalable system that can handle a large number of events.
 
 
 Overall, by implementing these strategies and carefully designing and testing the application architecture, 
