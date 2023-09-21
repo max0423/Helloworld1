@@ -31,4 +31,7 @@ structure or dictate
 how you manage state or handle routing. This allows developers to choose libraries and patterns that suit their needs, 
 which can be particularly beneficial in complex applications.
 
-Overall, React's departure from the traditional MVC architecture is driven by its desire to provide a more efficient and intuitive way to build user interfaces. By focusing on the component-based approach, React encourages modularity, reusability, and better performance, while also allowing developers the freedom to choose complementary libraries for other architectural concerns like state management and routing.
+Overall, React's departure from the traditional MVC architecture is driven by its desire to provide a more efficient and 
+intuitive way to build user interfaces. By focusing on the component-based approach, React encourages modularity, 
+reusability, and better performance, while also allowing developers the freedom to choose complementary libraries 
+for other architectural concerns like state management and routing.
