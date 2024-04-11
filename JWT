@@ -1,3 +1,14 @@
+
+const mongoose = require('mongoose');
+
+mongoose.set('strictQuery', false);
+
+mongoose
+  .connect('mongodb+srv://max2:Autoben1@max01.cuna4ke.mongodb.net/')
+  .then(() => console.log('Connected mongo db'))
+  .catch((e) => console.log(e));
+
+
 Token Based Authentication
 
 JSON Web Tokens are an open, industry standard RFC 7519 method for representing claims securely between two parties.
