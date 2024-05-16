@@ -1,3 +1,33 @@
+Objective: Create a generic function that reverses an array. The function should work with any type of data.
+
+Details:
+
+The function should be named reverseArray.
+It should be generic, capable of handling arrays of any type.
+The function should return a new array with elements in reverse order.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Create a new file called store.js to set up the Redux store:
 import { createStore } from 'redux';
 import rootReducer from './reducers';
